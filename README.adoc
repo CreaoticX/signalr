@@ -31,7 +31,7 @@ client.OnClientMethod = func(hub, method string, arguments []json.RawMessage) {
     fmt.Println("METHOD: ", method)
     fmt.Println("ARGUMENTS: ", arguments)
 }
-client.OnErrorMethod = func (err error) {
+client.OnMessageError = func (err error) {
    fmt.Println("ERROR OCCURRED: ", err)
 }
 ----
